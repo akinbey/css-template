@@ -1,0 +1,142 @@
+.round-button {
+  display: inline-block;
+  width: 4vh;
+  /* Düğme genişliği */
+  height: 4vh;
+  /* Düğme yüksekliği */
+  line-height: 5vh;
+  /* Metin dikey hizalaması */
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 50%;
+  /* Tam yuvarlak için border-radius kullanılır */
+  background-color: rgb(51, 49, 49);
+  /* Düğme rengi */
+  color: #ffffff;
+  /* Metin rengi */
+  border: none;
+  /* Kenarlık olmaması için border'ı sıfırla */
+}
+
+.round-button:hover {
+  background-color: rgb(67, 135, 238);
+  /* Hover durumunda yeni bir renk */
+}
+
+.social-margin {
+  margin-left: 2vh;
+}
+
+.menu:hover {
+  color: white;
+
+}
+
+.menu:hover svg path {
+  fill: rgb(67, 135, 238);
+  /* İstenilen rengi buraya yazın */
+}
+
+.menu {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.719);
+}
+
+.text-white {
+  color: white;
+}
+
+.menu-margin {
+  margin-left: 1vh;
+  margin-top: 0.2vh;
+}
+
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.image-container {
+  display: grid;
+  place-items: center;
+}
+
+.footer-color {
+  color: rgb(67, 135, 238)
+}
+
+.image-container {
+  width: 80%;
+  background: url('img/big.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+.shadow__btn {}
+
+
+
+.shadow__btn:hover {
+  box-shadow: 0 0 5px rgb(0, 140, 255),
+    0 0 25px rgb(0, 140, 255),
+    0 0 50px rgb(0, 140, 255),
+    0 0 100px rgb(0, 140, 255);
+  border: none;
+  font-size: 17px;
+  color: #fff;
+  border-radius: 50%;
+  letter-spacing: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.5s;
+  transition-property: box-shadow;
+}
+
+
+
+
+.img-border:hover {
+
+  box-shadow: 0 0 5px rgb(0, 140, 255),
+    0 0 25px rgb(0, 140, 255),
+    0 0 50px rgb(0, 140, 255),
+    0 0 100px rgb(0, 140, 255);
+  border: none;
+  font-size: 17px;
+  color: #fff;
+  border-radius: 50%;
+  letter-spacing: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: box-shadow 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.img-border:hover {
+  box-shadow: 0 0 10px rgb(0, 140, 255),
+    0 0 30px rgb(0, 140, 255),
+    0 0 60px rgb(0, 140, 255),
+    0 0 120px rgb(0, 140, 255);
+  transform: scale(1.05);
+  /* Küçük bir ölçek artışı ekledim */
+}
+
+.img-border:hover::after {
+  content: '\2022';
+  /* Unicode nokta karakteri ekledim (isteğe bağlı) */
+  display: block;
+  color: rgb(0, 140, 255);
+  font-size: 25px;
+  margin-top: 1vh;
+  animation: pulse 1s infinite alternate;
+  /* Saniyeli bir animasyon ekledim */
+}
+
+@keyframes pulse {
+  to {
+    transform: scale(1.2);
+  }
+}
